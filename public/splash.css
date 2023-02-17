@@ -1,0 +1,89 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+}
+
+#first {
+	background-color: #f2f2f2;
+
+  justify-content: center;
+}
+
+#second {
+  padding: 15px;
+	background-color: #333333;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	flex: 50% 1;
+	text-align: center;
+	justify-content: center;
+}
+#workoutImage {
+  max-width: 70%;
+	padding: 15px;
+  align-self: center;
+}
+
+#siteLogo {
+  max-width: 70%;
+	padding: 30px;
+  align-self: center;
+}
+#splashMessage {
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+
+}
+#splashWelcome {
+	color: #53e0cd;
+	font-weight: bold;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+#loginLabel {
+	display: flex;
+  flex-direction: column;
+  margin: 10px;
+	color: white;
+}
+
+#googleLogo {
+	max-width: 20px;
+	justify-self: center;
+	padding-right: 5px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    flex-direction: row;
+  }
+	#first {
+		font-size: larger;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	#siteLogo {
+  	max-width: 200px;
+	}
+	#workoutImage {
+		max-width: 400px;
+	}
+}
